@@ -1,0 +1,73 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#flashcard-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1500px) {
+    #flashcard-container {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #flashcard-container {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #flashcard-container {
+        grid-template-columns: auto;
+    }
+}
+
+@keyframes flashcard-click-anim {
+    from {
+        box-shadow: 0px 0px 10px 5px black;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    from {
+        box-shadow: 0 0 20px 5px lightblue;
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+    to {
+        box-shadow: 0px 0px 10px 5px black;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+div.flashcard {
+    height: auto;
+    min-width: 200px;
+    max-width: 400px;
+    background-color: #000;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 5px black;
+    margin: 20px;
+}
+
+div.flashcard > img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+div.flashcard > p {
+    font-size: x-large;
+    color: white;
+    margin: 0;
+    line-height: 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+body {
+    background-color: #202020;
+}
